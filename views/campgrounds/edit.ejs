@@ -7,7 +7,7 @@
     <form action="/campgrounds/<%=camp._id%>?_method=PUT" method="POST" novalidate class = "validated-form">
         <div class = "mb-3">
             <label class ="form-label" for="title">Title:</label>
-            <input class="form-control" type="text" name ='title' id = 'title' value="<%=camp.title %>" required>
+            <input class="form-control" type="text" name ='campground[title]' id = 'title' value="<%=camp.title %>" required>
             <div class="valid-feedback">
                 Looks good!
             </div>
@@ -15,7 +15,7 @@
         
         <div class = "mb-3">
             <label class ="form-label" for="location">Location:</label>
-            <input class="form-control" type="text" name = 'location' value="<%=camp.location %>">
+            <input class="form-control" type="text" name = 'campground[location]' value="<%=camp.location %>">
             <div class="valid-feedback">
                 Looks good!
             </div>
@@ -23,7 +23,7 @@
 
         <div class = "mb-3">
             <label class ="form-label" for="image">Image URL:</label>
-            <input class="form-control" type="text" name = 'image' value="<%=camp.image %>">
+            <input class="form-control" type="text" name = 'campground[image]' value="<%=camp.image %>">
             <div class="valid-feedback">
                 Looks good!
             </div>
@@ -33,7 +33,7 @@
             <label class = "form-label" for="price">Campground Price</label>
             <div class="input-group">
                 <span class="input-group-text" id="price-label">$</span>
-                <input  name = "price" type="text" class="form-control" id= "price" placeholder="0.00" aria-label="price-label" aria-describedby="basic-addon1" value="<%=camp.price %>">
+                <input  name = "campground[price]" type="text" class="form-control" id= "price" placeholder="0.00" aria-label="price-label" aria-describedby="basic-addon1" value="<%=camp.price %>">
             </div>
             <div class="valid-feedback">
                 Looks good!
@@ -42,7 +42,7 @@
 
         <div class = "mb-3">
             <label class ="form-label" for="description">Description:</label>
-            <textarea rows="4" class="form-control" type="text" name = 'description' required><%=camp.description %></textarea>
+            <textarea rows="4" class="form-control" type="text" name = 'campground[description]campground]' required><%=camp.description %></textarea>
             <div class="valid-feedback">
                 Looks good!
             </div>

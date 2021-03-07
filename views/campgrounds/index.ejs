@@ -1,9 +1,7 @@
     <% layout('layouts/boilerplate') %>
     <h1>All Campgrounds!</h1> 
-    <div>
-        <a href="/campgrounds/new">Add new campground</a>
-    </div> 
-    <ul>
+
+    <ul class = 'p-0'>
         <% for(let camp of campgrounds){ %>
 
             <div class = "card mb-3">
