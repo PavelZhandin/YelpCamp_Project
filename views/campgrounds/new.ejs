@@ -17,7 +17,16 @@
                     <input class="form-control" type="text" name = 'campground[location]' required>
                 </div>
 
-                <input type = "file" name = "image" multiple >
+                <label for="">Upload Images</label>
+                <div class="form-file custom-file input-group mb-3">
+                    <input type="file" class="form-control form-file-input" id="image" name = "image" multiple>
+                    <label class="input-group-text" for="image">
+                        <span class = "form-file-text custom-file-label">Choose image(-s)</span>
+                        <span class = "form-file-button">Browse</span>
+                    </label>
+                    
+                </div>
+                
                 <!-- <div class = "mb-3">
                     <label class ="form-label" for="image">Image URL:</label>
                     <input class="form-control" type="text" name = 'campground[image]' required>
